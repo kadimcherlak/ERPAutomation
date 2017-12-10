@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="966.0" style="-fx-scale-shape: 10;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OCTS_UI.FXMLController">
+   <children>
+      <Button fx:id="executeWS" disable="true" layoutX="705.0" layoutY="216.0" mnemonicParsing="false" onAction="#executeWSButton" prefHeight="53.0" prefWidth="213.0" style="-fx-background-radius: 10EM;" text="Start Test Execution">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="758.0" layoutY="164.0" prefHeight="24.0" prefWidth="80.0" text="      Step 3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="444.0" layoutY="164.0" prefHeight="24.0" prefWidth="80.0" text="      Step 2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="164.0" prefHeight="24.0" prefWidth="80.0" text="      Step 1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="16.0" layoutY="194.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="182.0" prefWidth="292.0">
+         <children>
+            <ComboBox fx:id="comboBox" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#setCombo" prefHeight="41.0" prefWidth="277.0" promptText="                    Select Module-&gt;Process" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+            <Button fx:id="sync1" disable="true" layoutX="14.0" layoutY="92.0" mnemonicParsing="false" onAction="#syncButton1" prefHeight="33.0" prefWidth="112.0" style="-fx-background-radius: 10EM;" text=" Sync HCM">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="sync2" disable="true" layoutX="169.0" layoutY="92.0" mnemonicParsing="false" onAction="#syncButton2" prefHeight="33.0" prefWidth="102.0" style="-fx-background-radius: 10EM;" text=" Sync ERP">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="validSync" disable="true" layoutX="90.0" layoutY="154.0" mnemonicParsing="false" onAction="#validButton" prefHeight="28.0" prefWidth="112.0" style="-fx-background-radius: 10EM;" text="Validate Sync">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="343.0" layoutY="186.0" prefHeight="182.0" prefWidth="298.0">
+         <children>
+            <TextField fx:id="filePath1" layoutX="8.0" layoutY="41.0" prefHeight="25.0" prefWidth="213.0" text="Select the Input Data Sheet" />
+            <TextField fx:id="filePath2" layoutX="8.0" layoutY="118.0" prefHeight="25.0" prefWidth="213.0" text="Select the Process Data File" />
+            <Button fx:id="fileButton1" disable="true" layoutX="232.0" layoutY="41.0" mnemonicParsing="false" onAction="#selectFilePath1" prefHeight="25.0" prefWidth="66.0" text="Browse">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="fileButton2" disable="true" layoutX="232.0" layoutY="118.0" mnemonicParsing="false" onAction="#selectFilePath2" prefHeight="25.0" prefWidth="66.0" text="Browse">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="102.0" text="Input Data Sheet">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="94.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="112.0" text="Process Data File">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="318.0" layoutY="135.0" orientation="VERTICAL" prefHeight="251.0" prefWidth="12.0" />
+      <Separator layoutX="653.0" layoutY="135.0" orientation="VERTICAL" prefHeight="251.0" prefWidth="12.0" />
+      <Separator layoutY="385.0" prefHeight="0.0" prefWidth="967.0" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" prefWidth="967.0" style="-fx-background-color: #393442;">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="119.0" layoutX="128.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cloud.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="297.0" layoutY="53.0" text="Oracle Cloud Test Automation Suite" textFill="#eeebeb">
+               <font>
+                  <Font name="Century Gothic Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutY="512.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="94.0" prefWidth="967.0" style="-fx-background-color: #484156;">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="173.0" layoutX="45.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@oracle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="217.0" layoutX="733.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cts.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ProgressBar fx:id="progressBar" layoutX="742.0" layoutY="307.0" prefHeight="18.0" prefWidth="193.0" progress="0.0" />
+      <Label layoutX="678.0" layoutY="304.0" prefHeight="24.0" prefWidth="80.0" text="Test Status">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="153.0" layoutY="388.0" prefHeight="112.0" prefWidth="678.0">
+         <children>
+            <TextArea id="outputText" fx:id="outputTextScreen" layoutY="13.0" prefHeight="87.0" prefWidth="654.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="51.0" layoutY="432.0" prefHeight="24.0" prefWidth="102.0" text="Execution Details">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="textOutput" layoutX="769.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="138.99999906867743" />
+   </children>
+</AnchorPane>
