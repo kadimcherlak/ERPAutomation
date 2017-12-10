@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="resources/" kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.osgi_3.11.3.v20170209-1843.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.osgi_3.11.3.v20170209-1843.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.core.commands_3.8.1.v20161221-1651.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.core.commands_3.8.1.v20161221-1651.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.equinox.common_3.8.0.v20160509-1230.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.equinox.common_3.8.0.v20160509-1230.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.equinox.registry_3.6.100.v20160223-2218.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.equinox.registry_3.6.100.v20160223-2218.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.core.runtime_3.12.0.v20160606-1342.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.core.runtime_3.12.0.v20160606-1342.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.text_3.6.0.v20160503-1849.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.text_3.6.0.v20160503-1849.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.swt.win32.win32.x86_64_3.105.3.v20170228-0512.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.swt.win32.win32.x86_64_3.105.3.v20170228-0512.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.jface_3.12.2.v20170113-2113.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.jface_3.12.2.v20170113-2113.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.jface.text_3.11.2.v20170220-1911.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.jface.text_3.11.2.v20170220-1911.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.ui.workbench_3.108.3.v20170216-1539.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.ui.workbench_3.108.3.v20170216-1539.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/com.ibm.icu_56.1.0.v201601250100.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/com.ibm.icu_56.1.0.v201601250100.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.ui.forms_3.7.1.v20161220-1635.jar" sourcepath="C:/Users/koushik/Documents/eclipse/plugins/org.eclipse.ui.forms_3.7.1.v20161220-1635.jar"/>
+	<classpathentry kind="lib" path="lib/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="lib/extentreports-3.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="lib/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="lib/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="lib/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/miglayout15-swing.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/koushik/Documents/Oracle Fusion/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
