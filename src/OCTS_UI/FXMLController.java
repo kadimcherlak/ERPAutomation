@@ -124,6 +124,7 @@ public class FXMLController implements Initializable {
 	 */
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
+		
 		List<String> list = new ArrayList<String>();
 		list.add("HCM->Employee");
 		list.add("HCM->Contractor");
@@ -282,7 +283,8 @@ public class FXMLController implements Initializable {
 		outputTextScreen.appendText("Test Excel Sheet Selected: " + inputfile_fp + newLine);
 		Logger.logInfo(FXMLController.class,"Test Excel Sheet Selected: " + inputfile_fp + newLine);
 		fileButton1.setDisable(false);
-		fileButton2.setDisable(false);
+		//fileButton2.setDisable(false);
+		executeWS.setDisable(false);
 			}
 			else
 			{
@@ -295,7 +297,7 @@ public class FXMLController implements Initializable {
 			
 	}
 
-	public void selectFilePath2(ActionEvent event) throws Exception {
+	/*public void selectFilePath2(ActionEvent event) throws Exception {
 		fileButton2.setDisable(true);
 		File1 = chooseFile();
 		if (!(File1 == null))
@@ -314,7 +316,7 @@ public class FXMLController implements Initializable {
 			Logger.logError(FXMLController.class,newLine + "No Process Test Data has been selected, Please click on Browse button again to select a File" + newLine);
 			throw new Exception("No Process Test Data has been selected, Please click on Browse button again to select a File");
 		}
-	}
+	}*/
 
 	/**
 	 *

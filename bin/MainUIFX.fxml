@@ -58,22 +58,12 @@
       </AnchorPane>
       <AnchorPane layoutX="343.0" layoutY="186.0" prefHeight="182.0" prefWidth="298.0">
          <children>
-            <TextField fx:id="filePath1" layoutX="8.0" layoutY="41.0" prefHeight="25.0" prefWidth="213.0" text="Select the Input Data Sheet" />
-            <TextField fx:id="filePath2" layoutX="8.0" layoutY="118.0" prefHeight="25.0" prefWidth="213.0" text="Select the Process Data File" />
-            <Button fx:id="fileButton1" disable="true" layoutX="232.0" layoutY="41.0" mnemonicParsing="false" onAction="#selectFilePath1" prefHeight="25.0" prefWidth="66.0" text="Browse">
+            <TextField fx:id="filePath1" layoutX="10.0" layoutY="79.0" prefHeight="25.0" prefWidth="213.0" text="Select the Test Data Sheet" />
+            <Button fx:id="fileButton1" disable="true" layoutX="232.0" layoutY="79.0" mnemonicParsing="false" onAction="#selectFilePath1" prefHeight="25.0" prefWidth="66.0" text="Browse">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <Button fx:id="fileButton2" disable="true" layoutX="232.0" layoutY="118.0" mnemonicParsing="false" onAction="#selectFilePath2" prefHeight="25.0" prefWidth="66.0" text="Browse">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Button>
-            <Label layoutX="14.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="102.0" text="Input Data Sheet">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Label>
-            <Label layoutX="14.0" layoutY="94.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="112.0" text="Process Data File">
+            <Label layoutX="14.0" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="102.0" text="Test Data Sheet">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
