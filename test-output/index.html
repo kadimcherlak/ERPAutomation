@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_Suite">
+              <span class="suite-name border-failed">Default Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_Suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_Suite">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass" hash-for-method="OracleCloud_Financial_Webservices(C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx, C:/Automation_OCTS/Data/GlInterface.zip)">OracleCloud_Financial_Webservices(C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx, C:/Automation_OCTS/Data/GlInterface.zip)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="OCTS_Finance_Automation_TestCases.JournalEntrySourceName" hash-for-method="journalEntrySourcename">journalEntrySourcename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="OCTS_Finance_Automation_TestCases.ErrorReportGeneration" hash-for-method="journalErrorReportGeneration">journalErrorReportGeneration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="OCTS_Finance_Automation_TestCases.JournalPeriodName" hash-for-method="journalPeriodname">journalPeriodname</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="OCTS_Finance_Automation_TestCases.NumberOfLines" hash-for-method="numberOfLines">numberOfLines</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">OCTS_Finance_Automation_TestCases.NumberOfLines</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="numberOfLines">
+                  </a> <!-- numberOfLines -->
+                  <span class="method-name">numberOfLines</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at OCTS_Finance_Automation_TestCases.NumberOfLines.numberOfLines(NumberOfLines.java:41)
+	at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+	at OCTS_UI.FXMLController$1.call(FXMLController.java:365)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">OCTS_Finance_Automation_TestCases.JournalEntrySourceName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="journalEntrySourcename">
+                  </a> <!-- journalEntrySourcename -->
+                  <span class="method-name">journalEntrySourcename</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at OCTS_Finance_Automation_TestCases.JournalEntrySourceName.journalEntrySourcename(JournalEntrySourceName.java:56)
+	at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+	at OCTS_UI.FXMLController$1.call(FXMLController.java:365)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">OCTS_Finance_Automation_TestCases.ErrorReportGeneration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="journalErrorReportGeneration">
+                  </a> <!-- journalErrorReportGeneration -->
+                  <span class="method-name">journalErrorReportGeneration</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at OCTS_Finance_Automation_TestCases.ErrorReportGeneration.journalErrorReportGeneration(ErrorReportGeneration.java:34)
+	at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+	at OCTS_UI.FXMLController$1.call(FXMLController.java:365)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">OCTS_Finance_Automation_TestCases.JournalPeriodName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="journalPeriodname">
+                  </a> <!-- journalPeriodname -->
+                  <span class="method-name">journalPeriodname</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at OCTS_Finance_Automation_TestCases.JournalPeriodName.journalPeriodname(JournalPeriodName.java:88)
+	at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+	at OCTS_UI.FXMLController$1.call(FXMLController.java:365)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OracleCloud_Financial_Webservices(C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx, C:/Automation_OCTS/Data/GlInterface.zip)">
+                  </a> <!-- OracleCloud_Financial_Webservices(C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx, C:/Automation_OCTS/Data/GlInterface.zip) -->
+                  <span class="method-name">OracleCloud_Financial_Webservices</span>
+                  <span class="parameters">(C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx, C:/Automation_OCTS/Data/GlInterface.zip)</span>
+                  <div class="stack-trace">java.lang.Exception: UploadFileToUcm: Error occurred while sending SOAP Request to Server
+	at OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass.OracleCloud_Financial_Webservices(ERP_Financial_Webservice_MainClass.java:362)
+	at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+	at OCTS_UI.FXMLController$1.call(FXMLController.java:365)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
+        </div> <!-- panel Default_Suite -->
+        <div panel-name="test-xml-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default Suite&quot;&gt;
+  &lt;test name=&quot;test-number-0&quot;&gt;
+    &lt;parameter name=&quot;testFile&quot; value=&quot;C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx&quot;/&gt;
+    &lt;parameter name=&quot;InterfaceFile&quot; value=&quot;C:/Automation_OCTS/Data/GlInterface.zip&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test-number-0 --&gt;
+  &lt;test name=&quot;test-number-1&quot;&gt;
+    &lt;parameter name=&quot;testFile&quot; value=&quot;C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx&quot;/&gt;
+    &lt;parameter name=&quot;InterfaceFile&quot; value=&quot;C:/Automation_OCTS/Data/GlInterface.zip&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OCTS_Finance_Automation_TestCases.JournalEntrySourceName&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test-number-1 --&gt;
+  &lt;test name=&quot;test-number-2&quot;&gt;
+    &lt;parameter name=&quot;testFile&quot; value=&quot;C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx&quot;/&gt;
+    &lt;parameter name=&quot;InterfaceFile&quot; value=&quot;C:/Automation_OCTS/Data/GlInterface.zip&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OCTS_Finance_Automation_TestCases.JournalPeriodName&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test-number-2 --&gt;
+  &lt;test name=&quot;test-number-3&quot;&gt;
+    &lt;parameter name=&quot;testFile&quot; value=&quot;C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx&quot;/&gt;
+    &lt;parameter name=&quot;InterfaceFile&quot; value=&quot;C:/Automation_OCTS/Data/GlInterface.zip&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OCTS_Finance_Automation_TestCases.NumberOfLines&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test-number-3 --&gt;
+  &lt;test name=&quot;test-number-4&quot;&gt;
+    &lt;parameter name=&quot;testFile&quot; value=&quot;C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx&quot;/&gt;
+    &lt;parameter name=&quot;InterfaceFile&quot; value=&quot;C:/Automation_OCTS/Data/GlInterface.zip&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OCTS_Finance_Automation_TestCases.ErrorReportGeneration&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test-number-4 --&gt;
+&lt;/suite&gt; &lt;!-- Default Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test-number-0 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test-number-1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test-number-2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test-number-3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test-number-4 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_Suite');
+function tableData_Default_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'OracleCloud_Financial_Webservices')
+data.setCell(0, 2, 'OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass')
+data.setCell(0, 3, 7675);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'journalEntrySourcename')
+data.setCell(1, 2, 'OCTS_Finance_Automation_TestCases.JournalEntrySourceName')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'journalPeriodname')
+data.setCell(2, 2, 'OCTS_Finance_Automation_TestCases.JournalPeriodName')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'numberOfLines')
+data.setCell(3, 2, 'OCTS_Finance_Automation_TestCases.NumberOfLines')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'journalErrorReportGeneration')
+data.setCell(4, 2, 'OCTS_Finance_Automation_TestCases.ErrorReportGeneration')
+data.setCell(4, 3, 0);
+window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-Default_Suite">
+              </div> <!-- times-div-Default_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">OCTS_Finance_Automation_TestCases.ErrorReportGeneration</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">OracleCloud_Financial_Webservices(C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx, C:/Automation_OCTS/Data/GlInterface.zip)</span>
+                <span class="method-start">108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=OracleCloud_Financial_Webservices status=FAILURE method=ERP_Financial_Webservice_Ma...)</span>
+                <span class="method-start">7784 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">OCTS_Finance_Automation_TestCases.JournalEntrySourceName</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">journalEntrySourcename</span>
+                <span class="method-start">7821 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=journalEntrySourcename status=FAILURE method=JournalEntrySourceName.journalEntrySou...)</span>
+                <span class="method-start">7821 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">OCTS_Finance_Automation_TestCases.JournalPeriodName</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">journalPeriodname</span>
+                <span class="method-start">7832 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=journalPeriodname status=FAILURE method=JournalPeriodName.journalPeriodname()[pri:0...)</span>
+                <span class="method-start">7832 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">OCTS_Finance_Automation_TestCases.NumberOfLines</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">numberOfLines</span>
+                <span class="method-start">7841 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=numberOfLines status=FAILURE method=NumberOfLines.numberOfLines()[pri:0, instance:O...)</span>
+                <span class="method-start">7842 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">OCTS_Finance_Automation_TestCases.ErrorReportGeneration</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">journalErrorReportGeneration</span>
+                <span class="method-start">7849 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=journalErrorReportGeneration status=FAILURE method=ErrorReportGeneration.journalErr...)</span>
+                <span class="method-start">7850 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7858 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

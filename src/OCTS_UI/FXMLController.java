@@ -33,6 +33,7 @@ import Common_Utility.Logger;
 import Common_Utility.ReporterBaseTest;
 import Common_Utility.XmlToExcelConverter;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
@@ -52,11 +53,15 @@ import OCTS_HCM_Webservices.ERP_executeXMLQuery;
 import OCTS_HCM_Webservices.ERP_getSessionID;
 import Common_Utility.TextToExcel;
 
-@SuppressWarnings({ "rawtypes", "deprecation" })
+@SuppressWarnings({ "rawtypes", "deprecation","unused" })
 public class FXMLController implements Initializable {
 
+	// Reference to the main application
+
+	private MainUIFX mainApp;
+    
 	String inputfile_fp;
-	String GIfile_fp;
+	String module_fp;
 	String testModule;
 	Task copyWorker;
 	String newLine = "\n";
@@ -71,6 +76,7 @@ public class FXMLController implements Initializable {
 	FileInputStream file = null;
 	XSSFWorkbook workbook;
 	String excelPath;
+	
 	@FXML
 	AnchorPane root;
 
@@ -148,34 +154,41 @@ public class FXMLController implements Initializable {
 			sync2.setDisable(true);
 			validSync.setDisable(true);
 			fileButton1.setDisable(true);
-			fileButton2.setDisable(true);
 			if (Item.equals("HCM->Employee")) {
 				testModule = "OCTS_HCM_Automation_TestCases.";
 				excelPath="C:/Automation_OCTS/Data/HCM_TestCaseExecution.xlsx";
+				module_fp="C:/Automation_OCTS/Data/Worker.dat";
 			} else if (Item.equals("HCM->Contractor")) {
 				testModule = "OCTS_HCM_Automation_TestCases.";
 				excelPath="C:/Automation_OCTS/Data/HCM_TestCaseExecution.xlsx";
+				module_fp="";
 			} else {
 				testModule = "";
 				excelPath="C:/Automation_OCTS/Data/HCM_TestCaseExecution.xlsx";
+				module_fp="";
 			}
+			System.out.println(excelPath);
 		} else if (Item.contains("Finance")) {
 			sync1.setDisable(true);
 			sync2.setDisable(false);
 			validSync.setDisable(true);
 			fileButton1.setDisable(true);
-			fileButton2.setDisable(true);
 			if (Item.equals("Finance->Accounts_Payable")) {
 				testModule = "";
 				excelPath="C:/Automation_OCTS/Data/ERP_TestCaseExecution.xlsx";
+				module_fp="";
 			} else if (Item.equals("Finance->Accounts_Receivable")) {
 				testModule = "";
 				excelPath="C:/Automation_OCTS/Data/ERP_TestCaseExecution.xlsx";
+				module_fp="";
 			} else {
 				testModule = "OCTS_Finance_Automation_TestCases.";
 				excelPath="C:/Automation_OCTS/Data/ERP_TestCaseExecution.xlsx";
+				module_fp="C:/Automation_OCTS/Data/GlInterface.zip";
 			}
+			//System.out.println(excelPath);
 		}
+		
 	}
 
 	@FXML
@@ -348,7 +361,8 @@ public class FXMLController implements Initializable {
 			protected Object call() throws Exception {
 				
 				Invoke_TestNG_Classes ws = new Invoke_TestNG_Classes();
-				String output = ws.iterateThroughTestCases(inputfile_fp, GIfile_fp, testModule,excelPath);
+				System.out.println(excelPath);
+				String output = ws.iterateThroughTestCases(inputfile_fp, module_fp, testModule,excelPath);
 				if(output.contains("Mark atleast"))
 				{
 					updateProgress(1.0, 1.0);
@@ -424,4 +438,6 @@ public class FXMLController implements Initializable {
 		
 		
 	}
+
+	
 }

@@ -132,13 +132,11 @@ public class ERP_HCM_Webservice_MainClass extends ReporterBaseTest {
 	
 	  
 	  
-	 @SuppressWarnings("restriction")
+	
 	@Parameters({ "testFile", "InterfaceFile" })
 	 @Test	 
 	public  void OracleCloud_Financial_Webservices(String inputfile_fp,String file_fp) throws Exception {
 		try{
-			//inputfile_fp = "C:\\Users\\koushik\\Documents\\Oracle Fusion\\ERP_InputDatasheet.XLSX";
-			//GIfile_fp = "C:\\Users\\koushik\\Documents\\Oracle Fusion\\GlInterface.zip";
 		 boolean booleanstatus=true;
 		 System.out.println(inputfile_fp);
 		 System.out.println(file_fp);
@@ -180,17 +178,23 @@ public class ERP_HCM_Webservice_MainClass extends ReporterBaseTest {
 				     throw new Exception(e1);
 		          }
            XSSFSheet ips1 = workbook.getSheetAt(0);
-           //System.out.println("FirstRowNum"+ips1.getFirstRowNum());
-           //System.out.println("LastRowNum"+ips1.getLastRowNum());
-           //
-       //    XSSFRow row = ips1.getRow(0);
+           
            CommonUtilFunctions cu = new CommonUtilFunctions();
            for (int currentColumnNum = 0; currentColumnNum < 1; currentColumnNum++)
            {
-           //XSSFCell cell = row.getCell(currentColumnNum); //get the cell
+        	  
+
+        	   
+           
            for (int currentRowNum = ips1.getFirstRowNum()+1; currentRowNum <= ips1.getLastRowNum(); currentRowNum++)
            {
            System.out.println("RowNum"+currentRowNum);
+           
+           cells_uFileName = cu.columnIdentification("UFTU_FileName",ips1);
+           System.out.println(cells_uFileName);
+           cellvalue_uFileName=cu.getCellFormattedStringValue(cells_uFileName.get(currentRowNum),workbook);
+           
+           if (cellvalue_uFileName.equals("Worker.zip")) {
            
            cells_uUserName = cu.columnIdentification("UserName",ips1);
            System.out.println(cells_uUserName);
@@ -319,7 +323,8 @@ public class ERP_HCM_Webservice_MainClass extends ReporterBaseTest {
            cells_uImportParamList7 = cu.columnIdentification("SEJRRequestImport_ParamList7",ips1);
            System.out.println(cells_uImportParamList7);
            cellvalue_uImportParamList7=cu.getCellFormattedStringValue(cells_uImportParamList7.get(currentRowNum),workbook);
-           
+           break;
+           }
            }
            }
            test.log(Status.PASS, "Step 1: Data successfully imported");

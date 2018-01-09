@@ -16,7 +16,7 @@ package OCTS_UI;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import Common_Utility.Logger;
+//import Common_Utility.Logger;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -26,19 +26,41 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 public class MainUIFX extends Application {
 
+	private Stage primaryStage;
+	
 	@SuppressWarnings("static-access")
 	@Override
 	public void start(Stage primaryStage) {
+		this.primaryStage = primaryStage;
+		
+		// Set the Title to the Stage
+		this.primaryStage.setTitle("Oracle Cloud Test Automation Suite");
 
+		// Disable resize option
+		this.primaryStage.setResizable(false);
+
+        initRootLayout();
+    }
+	
+
+		
+		/**
+	     * Initializes the root layout
+	     */
+	    @SuppressWarnings("static-access")
+		public void initRootLayout() {
 		// Create the FXMLLoader
 		FXMLLoader loader = new FXMLLoader();
+		
+		            
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hhmmss");
         System.setProperty("current.date", dateFormat.format(new Date()));
 		
 		try {
 
 			Parent root = loader.load(getClass().getResource("/SplashScreen.fxml"));
-
+            
+            
 			// Create the Scene
 
 			Scene scene = new Scene(root);
@@ -47,13 +69,7 @@ public class MainUIFX extends Application {
 			primaryStage.setScene(scene);
 
 			primaryStage.getIcons().add(new Image(MainUIFX.class.getResourceAsStream("/cloud.png")));
-			
-			// Set the Title to the Stage
-			primaryStage.setTitle("Oracle Cloud Test Automation Suite");
-
-			// Disable resize option
-			primaryStage.setResizable(false);
-
+		
 			
 			
 			// Display the Stage
@@ -68,6 +84,7 @@ public class MainUIFX extends Application {
 		}
 	}
 
+	
 	/**
 	 * @param args
 	 *            the command line arguments

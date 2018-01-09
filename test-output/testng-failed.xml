@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]">
+  <test name="test-number-0(failed)">
+    <parameter name="testFile" value="C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx"/>
+    <parameter name="InterfaceFile" value="C:/Automation_OCTS/Data/GlInterface.zip"/>
+    <classes>
+      <class name="OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass">
+        <methods>
+          <include name="tearDown"/>
+          <include name="OracleCloud_Financial_Webservices" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass -->
+    </classes>
+  </test> <!-- test-number-0(failed) -->
+  <test name="test-number-1(failed)">
+    <parameter name="testFile" value="C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx"/>
+    <parameter name="InterfaceFile" value="C:/Automation_OCTS/Data/GlInterface.zip"/>
+    <classes>
+      <class name="OCTS_Finance_Automation_TestCases.JournalEntrySourceName">
+        <methods>
+          <include name="journalEntrySourcename"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- OCTS_Finance_Automation_TestCases.JournalEntrySourceName -->
+    </classes>
+  </test> <!-- test-number-1(failed) -->
+  <test name="test-number-2(failed)">
+    <parameter name="testFile" value="C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx"/>
+    <parameter name="InterfaceFile" value="C:/Automation_OCTS/Data/GlInterface.zip"/>
+    <classes>
+      <class name="OCTS_Finance_Automation_TestCases.JournalPeriodName">
+        <methods>
+          <include name="tearDown"/>
+          <include name="journalPeriodname"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- OCTS_Finance_Automation_TestCases.JournalPeriodName -->
+    </classes>
+  </test> <!-- test-number-2(failed) -->
+  <test name="test-number-3(failed)">
+    <parameter name="testFile" value="C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx"/>
+    <parameter name="InterfaceFile" value="C:/Automation_OCTS/Data/GlInterface.zip"/>
+    <classes>
+      <class name="OCTS_Finance_Automation_TestCases.NumberOfLines">
+        <methods>
+          <include name="tearDown"/>
+          <include name="numberOfLines"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- OCTS_Finance_Automation_TestCases.NumberOfLines -->
+    </classes>
+  </test> <!-- test-number-3(failed) -->
+  <test name="test-number-4(failed)">
+    <parameter name="testFile" value="C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx"/>
+    <parameter name="InterfaceFile" value="C:/Automation_OCTS/Data/GlInterface.zip"/>
+    <classes>
+      <class name="OCTS_Finance_Automation_TestCases.ErrorReportGeneration">
+        <methods>
+          <include name="tearDown"/>
+          <include name="journalErrorReportGeneration"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- OCTS_Finance_Automation_TestCases.ErrorReportGeneration -->
+    </classes>
+  </test> <!-- test-number-4(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

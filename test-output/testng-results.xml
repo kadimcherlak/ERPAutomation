@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="0" total="5" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="7758" started-at="2018-01-09T06:40:06Z" finished-at="2018-01-09T06:40:14Z">
+    <groups>
+    </groups>
+    <test name="test-number-0" duration-ms="7703" started-at="2018-01-09T06:40:06Z" finished-at="2018-01-09T06:40:14Z">
+      <class name="OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass">
+        <test-method status="FAIL" signature="OracleCloud_Financial_Webservices(java.lang.String, java.lang.String)[pri:0, instance:OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass@697098ac]" name="OracleCloud_Financial_Webservices" duration-ms="7675" started-at="2018-01-08T22:40:06Z" finished-at="2018-01-08T22:40:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\Automation_OCTS\Data\OCTS_TestDatasheet.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:/Automation_OCTS/Data/GlInterface.zip]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[UploadFileToUcm: Error occurred while sending SOAP Request to Server]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: UploadFileToUcm: Error occurred while sending SOAP Request to Server
+	at OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass.OracleCloud_Financial_Webservices(ERP_Financial_Webservice_MainClass.java:362)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+	at OCTS_UI.FXMLController$1.call(FXMLController.java:365)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OracleCloud_Financial_Webservices -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass@697098ac]" name="getResult" is-config="true" duration-ms="11" started-at="2018-01-08T22:40:14Z" finished-at="2018-01-08T22:40:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OracleCloud_Financial_Webservices status=FAILURE method=ERP_Financial_Webservice_MainClass.OracleCloud_Financial_Webservices(java.lang.String, java.lang.String)[pri:0, instance:OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass@697098ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_Finance_Automation_TestCases.ERP_Financial_Webservice_MainClass -->
+    </test> <!-- test-number-0 -->
+    <test name="test-number-1" duration-ms="4" started-at="2018-01-09T06:40:14Z" finished-at="2018-01-09T06:40:14Z">
+      <class name="OCTS_Finance_Automation_TestCases.JournalEntrySourceName">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_Finance_Automation_TestCases.JournalEntrySourceName@2300172d]" name="getResult" is-config="true" duration-ms="4" started-at="2018-01-08T22:40:14Z" finished-at="2018-01-08T22:40:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=journalEntrySourcename status=FAILURE method=JournalEntrySourceName.journalEntrySourcename()[pri:0, instance:OCTS_Finance_Automation_TestCases.JournalEntrySourceName@2300172d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="journalEntrySourcename()[pri:0, instance:OCTS_Finance_Automation_TestCases.JournalEntrySourceName@2300172d]" name="journalEntrySourcename" duration-ms="0" started-at="2018-01-08T22:40:14Z" finished-at="2018-01-08T22:40:14Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at OCTS_Finance_Automation_TestCases.JournalEntrySourceName.journalEntrySourcename(JournalEntrySourceName.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+	at OCTS_UI.FXMLController$1.call(FXMLController.java:365)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- journalEntrySourcename -->
+      </class> <!-- OCTS_Finance_Automation_TestCases.JournalEntrySourceName -->
+    </test> <!-- test-number-1 -->
+    <test name="test-number-2" duration-ms="1" started-at="2018-01-09T06:40:14Z" finished-at="2018-01-09T06:40:14Z">
+      <class name="OCTS_Finance_Automation_TestCases.JournalPeriodName">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_Finance_Automation_TestCases.JournalPeriodName@1f1bce74]" name="getResult" is-config="true" duration-ms="1" started-at="2018-01-08T22:40:14Z" finished-at="2018-01-08T22:40:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=journalPeriodname status=FAILURE method=JournalPeriodName.journalPeriodname()[pri:0, instance:OCTS_Finance_Automation_TestCases.JournalPeriodName@1f1bce74] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="journalPeriodname()[pri:0, instance:OCTS_Finance_Automation_TestCases.JournalPeriodName@1f1bce74]" name="journalPeriodname" duration-ms="0" started-at="2018-01-08T22:40:14Z" finished-at="2018-01-08T22:40:14Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at OCTS_Finance_Automation_TestCases.JournalPeriodName.journalPeriodname(JournalPeriodName.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+	at OCTS_UI.FXMLController$1.call(FXMLController.java:365)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- journalPeriodname -->
+      </class> <!-- OCTS_Finance_Automation_TestCases.JournalPeriodName -->
+    </test> <!-- test-number-2 -->
+    <test name="test-number-3" duration-ms="3" started-at="2018-01-09T06:40:14Z" finished-at="2018-01-09T06:40:14Z">
+      <class name="OCTS_Finance_Automation_TestCases.NumberOfLines">
+        <test-method status="FAIL" signature="numberOfLines()[pri:0, instance:OCTS_Finance_Automation_TestCases.NumberOfLines@14a45072]" name="numberOfLines" duration-ms="0" started-at="2018-01-08T22:40:14Z" finished-at="2018-01-08T22:40:14Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at OCTS_Finance_Automation_TestCases.NumberOfLines.numberOfLines(NumberOfLines.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+	at OCTS_UI.FXMLController$1.call(FXMLController.java:365)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- numberOfLines -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_Finance_Automation_TestCases.NumberOfLines@14a45072]" name="getResult" is-config="true" duration-ms="1" started-at="2018-01-08T22:40:14Z" finished-at="2018-01-08T22:40:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=numberOfLines status=FAILURE method=NumberOfLines.numberOfLines()[pri:0, instance:OCTS_Finance_Automation_TestCases.NumberOfLines@14a45072] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- OCTS_Finance_Automation_TestCases.NumberOfLines -->
+    </test> <!-- test-number-3 -->
+    <test name="test-number-4" duration-ms="2" started-at="2018-01-09T06:40:14Z" finished-at="2018-01-09T06:40:14Z">
+      <class name="OCTS_Finance_Automation_TestCases.ErrorReportGeneration">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:OCTS_Finance_Automation_TestCases.ErrorReportGeneration@6e66c4f1]" name="setUp" is-config="true" duration-ms="93" started-at="2018-01-08T22:40:06Z" finished-at="2018-01-08T22:40:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="journalErrorReportGeneration()[pri:0, instance:OCTS_Finance_Automation_TestCases.ErrorReportGeneration@6e66c4f1]" name="journalErrorReportGeneration" duration-ms="0" started-at="2018-01-08T22:40:14Z" finished-at="2018-01-08T22:40:14Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at OCTS_Finance_Automation_TestCases.ErrorReportGeneration.journalErrorReportGeneration(ErrorReportGeneration.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at OCTS_Automation_Main_Modules.Invoke_TestNG_Classes.iterateThroughTestCases(Invoke_TestNG_Classes.java:171)
+	at OCTS_UI.FXMLController$1.call(FXMLController.java:365)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- journalErrorReportGeneration -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:OCTS_Finance_Automation_TestCases.ErrorReportGeneration@6e66c4f1]" name="getResult" is-config="true" duration-ms="1" started-at="2018-01-08T22:40:14Z" finished-at="2018-01-08T22:40:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=journalErrorReportGeneration status=FAILURE method=ErrorReportGeneration.journalErrorReportGeneration()[pri:0, instance:OCTS_Finance_Automation_TestCases.ErrorReportGeneration@6e66c4f1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:OCTS_Finance_Automation_TestCases.ErrorReportGeneration@6e66c4f1]" name="tearDown" is-config="true" duration-ms="432" started-at="2018-01-08T22:40:14Z" finished-at="2018-01-08T22:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- OCTS_Finance_Automation_TestCases.ErrorReportGeneration -->
+    </test> <!-- test-number-4 -->
+  </suite> <!-- Default Suite -->
+</testng-results>

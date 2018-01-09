@@ -29,14 +29,17 @@ import javafx.stage.Stage;
 
 public class SplashFXMLController implements Initializable {
 
+	
 	@FXML
 	AnchorPane rootPane1;
    
 	Parent root;
+
+
     /**
      * Initializes the controller class.
      */
-    @Override
+    //@Override
     public void initialize(URL url, ResourceBundle rb) {
          new SplashScreen().start();
     }
@@ -55,7 +58,11 @@ public class SplashFXMLController implements Initializable {
 				public void run() {
 					try {
 						
-						root = FXMLLoader.load(getClass().getResource("/MainUIFX.fxml"));
+						FXMLLoader loader = new FXMLLoader();
+						
+						root = loader.load(getClass().getResource("/MainUIFX.fxml"));
+						
+						
 					} catch (IOException  e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -86,6 +93,7 @@ public class SplashFXMLController implements Initializable {
     		
     	}
     }
-    
+   
+
     
 }
